@@ -125,6 +125,26 @@ image::success2.png["Ca run!", width=80%]
 . Cherchez dans la documentation {maven} les commandes permettant de générer une documentation javadoc, et les adaptions à faire sur votre projet (et éventuellement `pom.xml`) afin que {maven} génère la documentation automatiquement pour vous.
 . Documentez votre projet: remplacez le contenu de ce fichier README.doc par les instructions de compilation, de documentation et de lancement de votre projet. 
 
+== Documentation du projet (Compte-rendu)
+
+=== Compiler le projet :
+
+....
+mvn compile
+....
+
+=== Documenter le projet
+
+....
+mvn javadoc:javadoc
+....
+
+=== Lancer le jar
+
+....
+java -jar target/tp_qualite-1.0.jar
+....
+
 == Consignes et rendus
 
 Pour ce TP, il vous faudra simplement rendre le projet complet (`src`) ainsi que la dernière version du fichier `pom.xml` sur votre dépôt et la javadoc de votre code.
